@@ -20,7 +20,6 @@ module.exports = async function (context, req) {
     if (req.body.chainedReplacers !== undefined) {
         let { text } = req.body;
         req.body.chainedReplacers.map(chainedReplacer => {
-            context.log(`Text: '${text}' -- Find: '${chainedReplacer.pattern}' -- Replacement: '${chainedReplacer.replacement}'`);
             text = regexReplacer(text, chainedReplacer.pattern, chainedReplacer.replacement)
         });
 
