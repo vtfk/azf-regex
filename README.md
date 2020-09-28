@@ -43,7 +43,7 @@
 			"replacement": "Aa"
 		},
 		{
-            "pattern": "[^a-zA-Z0-9-./]"
+			"pattern": "[^a-zA-Z0-9-./]"
 		}
 	]
 }
